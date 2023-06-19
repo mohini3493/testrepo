@@ -13,3 +13,5 @@ jobs:
         server: ftp.devotionalindia.org
         username: mohini@devotionalindia.org
         password: ${{ secrets.diko_ftp_password }}
+        protocol: ftps
+        port: 21
