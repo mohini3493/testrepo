@@ -1,7 +1,4 @@
-on: 
-  push:
-    branches:
-      - main
+on: push
 name: Testing deployment
 jobs:
   web-deploy:
