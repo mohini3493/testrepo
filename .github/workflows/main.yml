@@ -1,5 +1,8 @@
-on: push
 name: Testing deployment
+on: 
+  push:
+    branches:
+      -main
 jobs:
   web-deploy:
     name: FTP-Deploy-Action
@@ -12,6 +15,6 @@ jobs:
       with:
         server: ftp.devotionalindia.org
         username: mohini@devotionalindia.org
-        password: ${{ secrets.diko_ftp_password }}
+        password: ${{ secrets.DIKO_FTP_PASSWORD }}
         protocol: ftps
         port: 21
